@@ -131,7 +131,7 @@ class YeePlatform {
       mixins.push(Brightness);
     }
 
-    if (features.includes('set_hsv')) {
+    if (features.includes('bg_set_hsv')) {
       this.log(`Device ${name} supports color`);
       mixins.push(Color);
     }

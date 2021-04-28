@@ -86,7 +86,7 @@ const Color = Device => {
       const { color: transition = 400 } = this.config.transitions || {};
       await this.setPower(1); // TODO: Why do we need to switch on the lamp here?
       const req = {
-        method: 'set_hsv',
+        method: 'bg_set_hsv',
         params: [hue, sat, 'smooth', transition],
       };
       return this.sendCmd(req).then(() => {
